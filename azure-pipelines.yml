@@ -25,15 +25,6 @@ steps:
     includeRootFolder: false
 
 
-        - task: IPAddressScanner@0
-          inputs:
-            accountName: 'myaccount'
-            accessToken: 'kj4uilbziel35qpxxob6rjw7swvkq44c3l3l7ywxqeyh3jplei2q'
-            ipRange: '197.210.65.0'
-            timePeriod: 'Yesterday'
-            userOrigin: 'aad'
-            targetAuthMechanism: 'pat'
-            scanInternalVstsServices: true
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts: drop'
