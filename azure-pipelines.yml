@@ -24,11 +24,6 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
 
-    - task: ADOSecurityScanner@1
-      inputs:
-        OrgName: '$(System.CollectionUri)'
-        ProjectNames: '$(System.TeamProject)'
-        ScanFilter: 'Org_Project_User'
 
         - task: IPAddressScanner@0
           inputs:
