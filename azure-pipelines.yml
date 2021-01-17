@@ -18,9 +18,6 @@ steps:
     npm test
   displayName: 'npm test'
 
-- task: WhiteSource Bolt@20
-  inputs: projectName: ODM PROJECT2
-    cwd: https://dev.azure.com/TheOlumideDavidsMediaCo/ODM PROJECT2
 - task: ArchiveFiles@2
   displayName: 'Archive files'
   inputs:
