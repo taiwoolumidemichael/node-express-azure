@@ -26,8 +26,7 @@ steps:
 
 - task: WhiteSource Bolt@20
   inputs: projectName: ODM PROJECT2
-    cwd: 'https://TheOlumideDavidsMediaCo@dev.azure.com/TheOlumideDavidsMediaCo/ODM%20PROJECT2/_git/ODM%20PROJECT2'
-
+    cwd: https://dev.azure.com/TheOlumideDavidsMediaCo/ODM PROJECT2
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts: drop'
   
