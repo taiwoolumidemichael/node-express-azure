@@ -23,10 +23,7 @@ steps:
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
-- task: ScanForVulnerabilities@0
-  inputs:
-    ProjectFileName: 'ODM PROJECT2'
-    VulnerabilityAction: 'Warn'
+
 
 
 - task: PublishBuildArtifacts@1
