@@ -13,7 +13,9 @@ steps:
 - script: |
     npm install
   displayName: 'npm install'
-
+- task: WhiteSource Bolt@20
+  inputs:
+    advance: true
 - script: |
     npm test
   displayName: 'npm test'
